@@ -78,7 +78,7 @@ steps:
       docker push acrmanual.azurecr.io/$(imageName):$(Build.BuildId)
   displayName: 'Push Docker Image to ACR'
 
-# Step 5: Deploy to Azure Container App using Azure CLI
+# Step 5: Deploy to Azure Container App Job using Azure CLI
 - task: AzureCLI@2
   inputs:
     azureSubscription: 'acrserviceconnectionmanual'
