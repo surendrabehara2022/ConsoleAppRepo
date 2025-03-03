@@ -85,6 +85,7 @@ steps:
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
+      az acr login --name acrmanual
       az containerapp job update \
         --name manualmyconsoleappjob \
         --resource-group containerrgmanual \
