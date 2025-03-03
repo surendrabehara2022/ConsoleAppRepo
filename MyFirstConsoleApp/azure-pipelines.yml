@@ -89,6 +89,6 @@ steps:
       az containerapp job update \
         --name manualmyconsoleappjob \
         --resource-group containerrgmanual \
-        --image acrsqmbqafc.azurecr.io/$(imageName):latest \
+        --image acrmanual.azurecr.io/$(imageName):latest \
         --debug                            
   displayName: 'Deploy to Azure Container App Job'
